@@ -1,0 +1,40 @@
+.mainSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.uploadSection {
+  border: 1px solid red;
+  width: 70%;
+  height: 20rem;
+  position: relative;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 100%;
+}
+
+.statusSection {
+  padding-left: 1rem;
+}
+
+.uploadSection .fileInput {
+  /* padding: 50% 0 0 50%; */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leftSection {
+  width: 48%;
+  border: 1px solid red;
+}
+
+.rightSection {
+  width: 48%;
+  border: 1px solid red;
+}

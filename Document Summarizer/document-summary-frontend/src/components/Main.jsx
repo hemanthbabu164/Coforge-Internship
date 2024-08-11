@@ -48,8 +48,8 @@ function Main() {
       const response = await axios.get(
         `http://localhost:8000/api/summary/?keyword=${searchKeyword}`
       );
-      console.log(response);
-      setSummary(response.data.summary);
+      // console.log(response);
+      setSummary(response.data[0]["summary"]);
     } catch (error) {
       const errorMessage =
         error.response?.data?.error || "Error Fectching Summary.";
@@ -59,19 +59,23 @@ function Main() {
   };
 
   return (
-    <Box padding={3}>
-      <UploadSection
-        file={file}
-        setFile={setFile}
-        handleUpload={handleUpload}
-      />
-      <StatusSection status={status} />
-      <SearchSection
-        searchKeyword={searchKeyword}
-        setSearchKeyword={setSearchKeyword}
-        handleSearch={handleSearch}
-      />
-      <SummarySection summary={summary} />
+    <Box className="mainSection" padding={3}>
+      <div className="leftSection">
+        <UploadSection
+          file={file}
+          setFile={setFile}
+          handleUpload={handleUpload}
+        />
+        <StatusSection status={status} />
+      </div>
+      <div className="rightSection">
+        <SearchSection
+          searchKeyword={searchKeyword}
+          setSearchKeyword={setSearchKeyword}
+          handleSearch={handleSearch}
+        />
+        <SummarySection summary={summary} />
+      </div>
     </Box>
   );
 }

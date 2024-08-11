@@ -3,7 +3,7 @@ import { Typography, CircularProgress } from "@mui/material";
 
 function StatusSection({ status }) {
   return (
-    <div>
+    <div className="statusSection">
       <Typography variant="h6" marginTop={2}>
         Status: {status}
       </Typography>
