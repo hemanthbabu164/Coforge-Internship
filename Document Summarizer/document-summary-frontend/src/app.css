@@ -4,10 +4,19 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+.headerSection {
+  background-color: #3f51b5;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
 .uploadSection {
-  border: 1px solid red;
+  background-color: #e0f7fa;
+  border: 1px solid #00796b;
   width: 70%;
   height: 20rem;
   position: relative;
@@ -18,11 +27,30 @@
 }
 
 .statusSection {
+  background-color: #e8f5e9;
   padding-left: 1rem;
 }
 
+.searchSection {
+  background-color: #fffde7;
+  border: 1px solid #fdd835;
+  padding: 1rem;
+}
+
+.summarySection {
+  background-color: #fbe9e7;
+  border: 1px solid #d32f2f;
+  padding: 1rem;
+}
+
+.footerSection {
+  background-color: #37474f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
 .uploadSection .fileInput {
-  /* padding: 50% 0 0 50%; */
   position: relative;
   top: 50%;
   left: 50%;
@@ -30,11 +58,13 @@
 }
 
 .leftSection {
+  background-color: #c8e6c9;
   width: 48%;
-  border: 1px solid red;
+  border: 1px solid #388e3c;
 }
 
 .rightSection {
+  background-color: #b3e5fc;
   width: 48%;
-  border: 1px solid red;
+  border: 1px solid #0288d1;
 }
